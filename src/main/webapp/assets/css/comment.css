@@ -1,0 +1,224 @@
+* {
+	margin: 0 0;
+}
+
+p{
+	line-height: 25px;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:link, a:visited, a:hover{
+	color: black;
+}
+
+a:active {
+	color: gray;
+}
+
+img {
+	padding: 0;
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+/*主要的容器*/
+.containner {
+	min-width: 1000px;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+
+.logo {
+	width: 100%;
+	height: 80px;
+}
+
+.logo .title {
+	display: inline-block;
+	padding-right: 10px;
+	color: #4E7282;
+	font-size: 50px;
+	border-right: 2px solid #4E7282;
+}
+
+.logo .center {
+	margin-top: 3px;
+	display: inline-block;
+	color: #4E7282;
+}
+
+.logo .center .item-right {
+	font-size: 25px;
+}
+
+.logo .right {
+	display: inline-block;
+	float: right;
+	color: #4E7282;
+}
+
+.logo .right img {
+	margin-top: 21px;
+}
+
+/*导航栏*/
+
+.navbar {
+	background-color: #4E7282;
+}
+
+.navbar ul {
+	padding-left: 0;
+	height: 40px;
+	width: 100%;
+}
+
+.navbar ul li{
+	display: inline-block;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 1px solid white;
+	text-align: center;
+}
+
+space {
+	margin-left: 50px;
+}
+
+tablespace {
+	margin-left: 10px;
+}
+
+.navbar ul li a {
+	color: white;
+}
+
+.navbar ul li:hover {
+	border-bottom: 1px solid gray;
+}
+
+/*主要内容*/
+.content {
+	float: left;
+	display: inline-block;
+	margin-top : 30px;
+}
+
+.right-connection-info {
+	display: inline-block;
+	float: right;
+	width: 10px;
+	height: 300px;
+	background-color: #4E7282;
+}
+
+
+
+@media screen and (min-width: 768px) {
+	.containner {
+		width: 900px;
+		min-width: 900px;
+	}
+
+	.right-connection-info {
+		display: none;
+	}
+}
+
+
+.base-line {
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.content-item-head {
+	margin: 0;
+	padding: 0;
+}
+
+.content-item-head img {
+	display: inline-block;
+}
+
+.item-content {
+	margin-top: 0;
+	padding-top: 0;
+	margin-left: 18px;
+	padding-left: 20px;
+	border-left: 1px solid #4E7282;
+}
+
+.textarea {
+	margin-left: 20px;
+	line-height: 25px;
+	font-size: 15px;
+}
+
+.left-nav {
+	position: fixed;
+	padding-right: 10px;
+	left: 0;
+	top:300px;
+	background-color: #4E7282;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.left-nav-navbar {
+	display: inline-block;
+	vertical-align: top;
+
+}
+
+.left-nav-switch {
+	display: inline-block;
+	line-height: 100px;
+	padding-left: 5px;
+	width: 20px;
+	color: white;
+	text-align: center;
+}
+
+.left-nav ul {
+	margin: 10px;
+	padding: 0;
+}
+
+.left-nav ul li {
+	height: 30px;
+	display: block;
+}
+
+.left-nav ul li a {
+	display: block;
+	color: white;
+}
+
+.bottom-btn {
+	float: right;
+	margin-right: 40px;
+	width: 70px;
+	height: 70px;
+	border-radius: 5px;
+	outline: none;
+	background-color: #4E7282;
+	color: white;
+	font-size: 20px;
+}
+
+.bottom-btn a:link, a:visited, a:hover {
+	display: block;
+	color: white;
+}
+
+.footer {
+	height: 350px;
+}

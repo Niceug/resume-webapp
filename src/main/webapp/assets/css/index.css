@@ -1,0 +1,67 @@
+/*基本信息*/
+.baseInfo {
+	margin-top : 0;
+	width: 100%;
+	height: 230px;
+}
+
+.baseInfo .content-item-head .base-line {
+	display: inline-block;
+	width: 710px;
+	margin-bottom: 10px;
+	border: 1px solid #4E7282;
+}
+
+.base-left {
+	display: inline-block;
+}
+
+.base-left table tr {
+	height: 33px;
+}
+
+
+.base-right {
+	margin-right: 30px;
+	display: inline-block;
+	float: right;
+
+}
+
+/*教育背景*/
+.educational_background {
+	width: 100%;
+	height: 180px;
+}
+
+.educational_background .content-item-head .base-line {
+	display: inline-block;
+	width: 710px;
+	margin-bottom: 10px;
+	border: 1px solid #4E7282;
+}
+
+/*应聘岗位*/
+.candidate_post {
+	width: 100%;
+	height: 80px;
+}
+
+.candidate_post .content-item-head .base-line {
+	display: inline-block;
+	width: 710px;
+	margin-bottom: 10px;
+	border: 1px solid #4E7282;
+}
+
+/*技能专长*/
+.technical_expertise {
+	width: 100%;
+}
+
+.technical_expertise .content-item-head .base-line {
+	display: inline-block;
+	width: 710px;
+	margin-bottom: 10px;
+	border: 1px solid #4E7282;
+}

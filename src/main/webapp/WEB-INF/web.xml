@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1"
+         metadata-complete="true">
+
+    <filter>
+        <filter-name>AccessCountFilter</filter-name>
+        <filter-class>com.ltp.resume.filter.AccessCountFilter</filter-class>
+        <init-param>
+            <param-name>logFileName</param-name>
+            <param-value>accessLog.txt</param-value>
+        </init-param>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>AccessCountFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+        <url-pattern>/pages/projects.html</url-pattern>
+        <url-pattern>/pages/knowledge.html</url-pattern>
+    </filter-mapping>
+
+    <servlet>
+        <servlet-name>ManageServlet</servlet-name>
+        <servlet-class>com.ltp.resume.servlet.ManageServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>ManageServlet</servlet-name>
+        <url-pattern>/manage</url-pattern>
+    </servlet-mapping>
+
+</web-app>
